@@ -1856,7 +1856,7 @@ describe("server", () => {
         res.end("hello world\n");
       });
 
-      const engine = eio({ transports: ["polling"], allowUpgrades: false });
+      const engine = eio({ transports: ["polling"], allowUpgrades: false, allowEIO3: true });
       engine.attach(srv);
       srv.listen(() => {
         const port = srv.address().port;
@@ -1894,7 +1894,7 @@ describe("server", () => {
         res.end("hello world\n");
       });
 
-      const engine = eio({ transports: ["polling"], allowUpgrades: false });
+      const engine = eio({ transports: ["polling"], allowUpgrades: false, allowEIO3: true });
       engine.attach(srv);
       srv.listen(() => {
         const port = srv.address().port;
@@ -1934,7 +1934,7 @@ describe("server", () => {
         res.end("hello world\n");
       });
 
-      const engine = eio({ transports: ["websocket"], allowUpgrades: false });
+      const engine = eio({ transports: ["websocket"], allowUpgrades: false, allowEIO3: true });
       engine.attach(srv);
       srv.listen(() => {
         const port = srv.address().port;
@@ -1973,7 +1973,7 @@ describe("server", () => {
         res.end("hello world\n");
       });
 
-      const engine = eio({ transports: ["polling"], allowUpgrades: false });
+      const engine = eio({ transports: ["polling"], allowUpgrades: false, allowEIO3: true });
       engine.attach(srv);
       srv.listen(() => {
         const port = srv.address().port;
@@ -2012,7 +2012,7 @@ describe("server", () => {
         res.end("hello world\n");
       });
 
-      const engine = eio({ transports: ["websocket"], allowUpgrades: false });
+      const engine = eio({ transports: ["websocket"], allowUpgrades: false, allowEIO3: true });
       engine.attach(srv);
       srv.listen(() => {
         const port = srv.address().port;
